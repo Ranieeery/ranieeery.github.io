@@ -1,23 +1,2 @@
-# Jekyll files
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.jekyll-include-cache/
-.jekyll-drafts/
-.jekyll-data/
-.jekyll-archives/
-.jekyll-remote-theme/
-.jekyll-plugins/
-.jekyll-templates/
-.jekyll-fragments/
-.jekyll-redirects/
-.jekyll-metadata.json
-.jekyll-cache.json
-.jekyll-include-cache.json
-.jekyll-archives.json
-.jekyll-remote-theme.json
-.jekyll-plugins.json
-.jekyll-templates.json
-.jekyll-fragments.json
-.jekyll-redirects.json
+.git
+node_modules
