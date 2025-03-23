@@ -11,7 +11,7 @@ image:
   alt: Código Java com Integer e equals()
 ---
 
-# corrigir isso daqui
+<!-- TODO: Acho que posso melhorar essa introdução -->
 
 Se você já utilizou Java por um tempo deve ter percebido que todos os tipos primitivos começam com a inicial minúscula
 (como `int`, `float` e `boolean`), porém em algum momento deve ter visto `Integer` ou `Double` com letra maiúscula e que
@@ -59,6 +59,10 @@ print("Hello World"); // Uso de String
 ```
 
 ## E porque não usar apenas Wrappers?
+
+Apesar de ser uma grande flexibilidade e inúmeros benefícios, o uso deve ser situacional uma vez que impactam diretamente no desempenho e consumo
+de memória da aplicação, principalmente se comparado ao uso direto de tipos primitivos, que são armazenados diretamente na memória, enquanto os 
+Wrappers juntamente com Objetos de maior complexidades são alocados no heap
 
 Em construção... 🚧
 
