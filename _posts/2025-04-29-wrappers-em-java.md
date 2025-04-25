@@ -43,17 +43,16 @@ Para cada um dos oito tipos primitivos existe uma classe wrapper correspondente,
 
 A classe String, embora possa parecer um Wrapper, é na verdade uma sequência de caracteres e implementa uma interface chamada `CharSequence`[^fn2]. Por conta desta interface temos métodos como `charAt()`, `length()`(que você provavelmente nunca lembra se é length ou lenght) e `toString()`. As classes `StringBuilder` e `StringBuffer` também implementam CharSequence, consequentemente permitindo o polimorfismo.
 
-## E porque não usar apenas Wrappers?
-
-Apesar de ser uma grande flexibilidade e inúmeros benefícios, o uso deve ser situacional uma vez que impacta diretamente no desempenho e consumo de memória da aplicação, principalmente se comparado ao uso direto de tipos primitivos, que são armazenados diretamente na memória, enquanto os Wrappers juntamente com objetos de maior complexidades são alocados no heap
-
 ## Autoboxing
+
+Em construção... 🚧
+Passível de mudanças
 
 ## Equals (titulo provisorio)
 
-Em construção... 🚧
+## E porque não usar apenas Wrappers?
 
-Passível de mudanças
+Apesar de ser uma grande flexibilidade e inúmeros benefícios, o uso deve ser situacional uma vez que impacta diretamente no desempenho e consumo de memória da aplicação, principalmente se comparado ao uso direto de tipos primitivos, que são armazenados diretamente na memória, enquanto os Wrappers juntamente com objetos de maior complexidades são alocados no heap
 
 ## Notas de rodapé
 [^fn1]: <https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/com/sun/jdi/ReferenceType.html>
