@@ -22,7 +22,7 @@ ArrayList<int> = ... //Type argument cannot be of a primitive type
 ArrayList<Integer> list = ... // Ok
 ArrayList<int[]> list = ... // Ok, Reference Type 
 ``` 
-[^fn1]
+[Reference Type ^fn1]
 
 Além disso, por serem objetos as classes Wrapper fornecem uma gama de métodos utilitários para trabalhar com os valores primitivos encapsulados, tais como métodos de conversão de tipo como `Integer.toString()` para retornar o valor como *String*. Outra vantagem é a possibilidade de usar *null* para representar ausência de um valor, algo que não é possível utilizando tipos primitivos.
 
@@ -56,5 +56,5 @@ Em construção... 🚧
 Passível de mudanças
 
 ## Notas de rodapé
-[^fn1]: <https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/com/sun/jdi/ReferenceType.html>
+[Reference Type ^fn1]: <https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/com/sun/jdi/ReferenceType.html>
 [^fn2]: <https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html>
