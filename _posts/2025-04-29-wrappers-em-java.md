@@ -2,7 +2,7 @@
 title: Wrappers em Java
 description: Aprenda o que são e como usar os Wrappers em Java.
 author: Raniery
-date: 2025-04-29 08:51:00 +0300
+date: 2025-04-25 08:51:00 +0300
 categories: [Java, Tutorial]
 tags: [Code]
 # pin: true
@@ -20,8 +20,9 @@ Antes de tudo é necessário uma contextualização sobre a linguagem Java. Embo
 ```java
 ArrayList<int> = ... //Type argument cannot be of a primitive type
 ArrayList<Integer> list = ... // Ok
-ArrayList<int[]> list = ... // Ok, Reference Type [^fn1]
-```
+ArrayList<int[]> list = ... // Ok, Reference Type 
+``` 
+[^fn1]
 
 Além disso, por serem objetos as classes Wrapper fornecem uma gama de métodos utilitários para trabalhar com os valores primitivos encapsulados, tais como métodos de conversão de tipo como `Integer.toString()` para retornar o valor como *String*. Outra vantagem é a possibilidade de usar *null* para representar ausência de um valor, algo que não é possível utilizando tipos primitivos.
 
