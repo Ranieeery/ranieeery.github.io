@@ -21,7 +21,8 @@ Antes de tudo é necessário uma contextualização sobre a linguagem Java. Embo
 ArrayList<int> = ... // Erro: Type argument cannot be of a primitive type
 ArrayList<Integer> list = ... // Ok: Usa a classe Wrapper Integer
 ArrayList<int[]> list = ... // Ok: int[] é um tipo de referência (objeto array de int), não um primitivo isolado. Confira a nota de rodapé abaixo para mais detalhes
-``` 
+```
+
 > Sobre Reference Type[^fn1]
 
 Além disso, por serem objetos, as classes Wrapper fornecem uma gama de métodos utilitários para trabalhar com os valores primitivos encapsulados, tais como métodos de conversão de tipo como `Integer.toString()` para retornar o valor como *String*. Outra vantagem é a possibilidade de usar *null* para representar ausência de um valor, algo que não é possível utilizando tipos primitivos.
@@ -33,7 +34,7 @@ String valorStr = valor.toString();
 System.out.println(valorStr) // "25"
 ```
 
-Para cada um dos oito tipos primitivos existe uma classe wrapper correspondente, disponíveis no pacote `java.lang`, sendo: 
+Para cada um dos oito tipos primitivos existe uma classe wrapper correspondente, disponíveis no pacote `java.lang`, sendo:
 
 | Tipo Primitivo | Wrapper   |
 | :------------- | :-------- |
@@ -64,7 +65,7 @@ Autoboxing é o nome do processo no qual o compilador converte o tipo primitivo 
 Integer number = 10;
 ```
 
-Já o unboxing é o processo inverso, onde uma classe Wrapper é automaticamente convertida para seu tipo primitivo correspondente. Conforme o exemplo abaixo, o compilador converterá *Integer* para seu valor em *int*. 
+Já o unboxing é o processo inverso, onde uma classe Wrapper é automaticamente convertida para seu tipo primitivo correspondente. Conforme o exemplo abaixo, o compilador converterá *Integer* para seu valor em *int*.
 
 ```java
 Integer number = 25;
@@ -91,10 +92,10 @@ O código acima levanta uma questão: por que `a == b` é `true` mas `c == d` é
 
 Isso acontece porque o Java mantém um *cache* (pool) de objetos para certos valores de Wrappers para otimizar o uso de memória. Por padrão, esses caches cobrem os seguintes valores:
 
-*   **Boolean**: `true` e `false` são sempre os mesmos objetos.
-*   **Byte**: Todos os valores de -128 a 127.
-*   **Short** e **Integer**: Valores de -128 a 127.
-*   **Character**: Valores de `\u0000` a `\u007F` (0 a 127).
+- **Boolean**: `true` e `false` são sempre os mesmos objetos.
+- **Byte**: Todos os valores de -128 a 127.
+- **Short** e **Integer**: Valores de -128 a 127.
+- **Character**: Valores de `\u0000` a `\u007F` (0 a 127).
 
 Quando você utiliza o autoboxing ou `valueOf()` para valores dentro dessas faixas, o Java retorna um objeto já existente na memória do cache. Porém, para valores fora do range, como 1000, um novo objeto é criado. Portanto, para comparar os *valores* de objetos Wrapper, é importante utilizar o método `equals()` ou utilizar o operador `==` ciente dessas limitações de cache.
 
@@ -125,5 +126,6 @@ Apesar de terem uma grande flexibilidade e uma gama de benefícios, o uso deve s
 Em resumo, use Wrappers quando precisar tratar primitivos como objetos, como em Collections, aproveitar seus métodos utilitários ou representar a ausência de valor com *null*. Para máxima performance em cálculos intensivos, prefira os tipos primitivos (atento para questões de precisão em pontos flutuantes também).
 
 ## Notas de rodapé
+
 [^fn1]: <https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/com/sun/jdi/ReferenceType.html>
 [^fn2]: <https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html>
