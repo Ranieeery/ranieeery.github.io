@@ -110,7 +110,7 @@ System.out.println(a == b);
 System.out.println(c == d);
 ```
 
-### Mas e String?
+## Mas e String?
 
 A classe *String*, embora possa parecer um Wrapper, é na verdade uma sequência de caracteres e implementa uma interface chamada *CharSequence*[^fn2]. Por conta desta interface temos métodos como `charAt()`, `length()`(que você provavelmente nunca lembra se é length() ou lenght()) e `toString()`. As classes `StringBuilder` e `StringBuffer` também implementam CharSequence, consequentemente permitindo o polimorfismo.
 
