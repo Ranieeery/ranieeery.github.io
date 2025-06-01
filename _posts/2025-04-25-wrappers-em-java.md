@@ -15,7 +15,7 @@ Imagine a seguinte situação: você está desenvolvendo em Java e precisa armaz
 
 ## O que são Wrappers afinal?
 
-Antes de tudo é necessário uma contextualização sobre a linguagem Java. Embora Java suporte outros paradigmas de programação como Funcional e Procedural, o seu cerne é a Orientação a Objetos, e portanto, é necessário que haja um mecanismo para que tipos primitivos possam ser tratados como objetos e consequentemente serem manipulados como tal. Para o uso em Collections, o *ArrayList* tratado inicialmente seria declarado como `ArrayList<Integer>`.
+Antes de tudo é necessária uma contextualização sobre a linguagem Java. Embora Java suporte outros paradigmas de programação como Funcional e Procedural, o seu cerne é a Orientação a Objetos, e, portanto, é necessário que haja um mecanismo para que tipos primitivos possam ser tratados como objetos e serem consequentemente manipulados como tal. Para o uso em Collections, o *ArrayList* tratado inicialmente seria declarado como `ArrayList<Integer>`.
 
 ```java
 ArrayList<int> = ... // Erro: Type argument cannot be of a primitive type
